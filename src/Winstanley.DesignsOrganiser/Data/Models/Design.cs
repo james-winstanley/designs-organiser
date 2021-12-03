@@ -9,10 +9,13 @@ public record Design : AuditEntity<int>
     [Required]
     [StringLength(256)]
     public string Name { get; set; }
+
     public string Description { get; set; }
+
     public string FileName { get; set; }
 
     public int CategoryId { get; set; }
+
     [Required]
     public int FolderId { get; set; }
 
